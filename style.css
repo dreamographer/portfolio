@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'united_kingdomregular';
+    src: url('font/united_kingdom/united_kingdom_demo-webfont.woff2') format('woff2'),
+         url('font/united_kingdom/united_kingdom_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    font-family: poppins;
+    background-size: 400%;
+   animation: grad 5s infinite alternate;
+}
+
+@keyframes grad {
+    0%{
+       background-position:left ;
+    }
+    100%{
+       background-position: right;
+    }
+}
+
+h1{
+    font-family: poppins black;
+}
+
+
+.slide {
+box-shadow: 16.5px 19px 44px 5px #030303;
+}
+#dp{
+    box-shadow: 16.5px 19px 44px 10px #020202ec;
+}
+
+.about{ 
+    background: linear-gradient(to right, #d3cce354, #e9e4f08a);
+    backdrop-filter: blur(20px);
+}
+.s1:hover{
+     /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background: #49418f;
+    transition: background .2s ease-in-out;
+}
+
+.s1:hover > h4{
+    color: rgb(255, 255, 255);
+}
+
+.s2:hover{
+    /* background: linear-gradient(to right, #373b44, #4286f4); */
+    background:#373b44;
+    transition: background .2s ease-out;
+}
+.s2:hover > h4{
+    color: rgb(255, 255, 255);
+}
+.s3:hover{
+    /* background: linear-gradient(to right, #396afc, #2948ff); */
+    background: #396afc;
+    transition: background .2s ease-in;
+   
+}
+.s3:hover > h4{
+    color: rgb(255, 255, 255);
+}
+.s4 h4{
+    color: white;
+}
+.s4:hover{
+    /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
+    background: #bdc3c7;
+    transition: background .2s ease-in;
+    
+}
+.s4:hover h4{
+    color: rgb(5, 5, 5);
+}
+.s4:hover > h4{
+    color: black;
+}
+
+
+.s5:hover{
+    /* background: linear-gradient(to right, #0575e6, #021b79); */
+    background:#0575e6 ;
+    transition: background .2s ease-in;
+}
+.s5:hover > h4{
+    color: rgb(255, 255, 255);
+}
+
