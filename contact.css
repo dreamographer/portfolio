@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding:0;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+
+  }
+
+  /* hover design */
+  .nav-link {
+    color: #030303;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    
+    position: relative;
+  }
+  .nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ec0f0f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* end of hover design */
+
+  .social {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .social li {
+    list-style: none;
+  }
+  
+  .social li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .social li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .social li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .social li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .social li a:hover:before {
+    top: 0;
+  }
+  
+  .social li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .social li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  .social li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  .social li:nth-child(4) a:before {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }

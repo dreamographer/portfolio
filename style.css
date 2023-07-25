@@ -59,7 +59,7 @@
 
 body {
     /* background: linear-gradient(to left, #0f2027, #203a43, #2c5364); */
-    background: linear-gradient(to right, #ccdbfd, #d5bdaf);
+    background: linear-gradient(to right, #497fd1,#97ddf8, #f1e4dc);
    
     font-family:monospace;
     font-weight: bold ;
@@ -72,7 +72,7 @@ body {
        background-position:right ;
     }
     100%{
-       background-position: bottom;
+       background-position: left;
     }
 }
 
@@ -87,7 +87,9 @@ h4{
 box-shadow: 16.5px 19px 44px 5px #03030350;
 }
 #dp{
-    box-shadow: 16.5px 19px 44px 10px #020202ec;
+    box-shadow: 10.5px 8px 25px -9px rgba(28, 28, 28, 0.59);
+
+
 }
 
 .about{ 
