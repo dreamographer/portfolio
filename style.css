@@ -1,12 +1,48 @@
+
 @font-face {
-    font-family: 'united_kingdomregular';
-    src: url('font/united_kingdom/united_kingdom_demo-webfont.woff2') format('woff2'),
-         url('font/united_kingdom/united_kingdom_demo-webfont.woff') format('woff');
+    font-family: 'poppinsbold';
+    src: url('font/poppins/poppins-bold-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('poppins-medium-webfont.woff2') format('woff2'),
+         url('poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('font/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('poppins-semibold-webfont.woff2') format('woff2'),
+         url('poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
     /* background: linear-gradient(to left, #0f2027, #203a43, #2c5364); */
@@ -27,7 +63,7 @@ body {
 }
 
 h1{
-    font-family: poppins black;
+    font-family: poppinsbold;
 }
 h4{
     color: #d8e2dc;
