@@ -48,7 +48,7 @@ body {
     /* background: linear-gradient(to left, #0f2027, #203a43, #2c5364); */
     background: linear-gradient(to right, #ccdbfd, #d5bdaf);
    
-    font-family: poppins;
+    font-family: poppinsregular;
     background-size: 400%;
    animation: grad 5s infinite alternate;
 }
