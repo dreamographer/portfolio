@@ -1,0 +1,38 @@
+body {
+    /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
+    /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
+    background: linear-gradient(to right, #dac2c2, #d5bdaf);
+    font-family: poppins;
+    background-size: 200%;
+   animation: grad 20s infinite alternate;
+   color: rgb(0, 0, 0);
+}
+@keyframes grad {
+    0%{
+       background-position:left ;
+    }
+    100%{
+       background-position: right;
+    }
+}
+h4{
+    font-family: poppins black;
+}
+h1{
+    font-family: poppins semibold;
+    font-size: 30px;
+
+}
+h5{
+    font-family: poppins light;
+    font-size: 17px;
+}
+.s1{
+    background: #fefeff50;
+    
+}
+
+.detail{
+    background:rgba(223, 110, 217, 0.103);
+    backdrop-filter: blur(20px);
+}

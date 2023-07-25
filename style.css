@@ -9,7 +9,9 @@
 
 
 body {
-    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    /* background: linear-gradient(to left, #0f2027, #203a43, #2c5364); */
+    background: linear-gradient(to right, #ccdbfd, #d5bdaf);
+   
     font-family: poppins;
     background-size: 400%;
    animation: grad 5s infinite alternate;
@@ -17,79 +19,68 @@ body {
 
 @keyframes grad {
     0%{
-       background-position:left ;
+       background-position:right ;
     }
     100%{
-       background-position: right;
+       background-position: bottom;
     }
 }
 
 h1{
     font-family: poppins black;
 }
-
+h4{
+    color: #d8e2dc;
+}
 
 .slide {
-box-shadow: 16.5px 19px 44px 5px #030303;
+box-shadow: 16.5px 19px 44px 5px #03030350;
 }
 #dp{
     box-shadow: 16.5px 19px 44px 10px #020202ec;
 }
 
 .about{ 
-    background: linear-gradient(to right, #d3cce354, #e9e4f08a);
-    backdrop-filter: blur(20px);
+    /* background: linear-gradient(to right, #d3cce354, #e9e4f08a);
+    backdrop-filter: blur(20px); */
+    border-radius: 51px;
+background: linear-gradient(315deg, #f0f0f0, #cacaca);
+box-shadow:  -22px -22px 32px #d5d5d5,
+}
+.s1,.s2,.s3,.s4,.s5{
+    background:#0575e6 ;
 }
 .s1:hover{
      /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-    background: #49418f;
+     background:#0080ff ;
     transition: background .2s ease-in-out;
 }
 
-.s1:hover > h4{
-    color: rgb(255, 255, 255);
-}
 
 .s2:hover{
     /* background: linear-gradient(to right, #373b44, #4286f4); */
-    background:#373b44;
+    background:#0080ff ;
     transition: background .2s ease-out;
 }
-.s2:hover > h4{
-    color: rgb(255, 255, 255);
-}
+
+
 .s3:hover{
     /* background: linear-gradient(to right, #396afc, #2948ff); */
-    background: #396afc;
+    background:#0080ff ;
     transition: background .2s ease-in;
    
 }
-.s3:hover > h4{
-    color: rgb(255, 255, 255);
-}
-.s4 h4{
-    color: white;
-}
+
 .s4:hover{
     /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
-    background: #bdc3c7;
+    background:#0080ff ;
     transition: background .2s ease-in;
     
-}
-.s4:hover h4{
-    color: rgb(5, 5, 5);
-}
-.s4:hover > h4{
-    color: black;
 }
 
 
 .s5:hover{
     /* background: linear-gradient(to right, #0575e6, #021b79); */
-    background:#0575e6 ;
+    background:#0080ff ;
     transition: background .2s ease-in;
 }
-.s5:hover > h4{
-    color: rgb(255, 255, 255);
-}
-
