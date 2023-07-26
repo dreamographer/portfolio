@@ -12,17 +12,6 @@
 
 
 
-@font-face {
-    font-family: 'poppinslight';
-    src: url('font/poppins/poppins-thin-webfont.woff2') format('woff2'),
-         url('font/poppins/poppins-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'poppinsmedium';
@@ -33,33 +22,9 @@
 
 }
 
-
-
-
-@font-face {
-    font-family: 'poppinssemibold';
-    src: url('font/poppins/poppins-semibold-webfont.woff2') format('woff2'),
-         url('font/poppins/poppins-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'poppinsthin';
-    src: url('poppins-thin-webfont.woff2') format('woff2'),
-         url('poppins-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
     /* background: linear-gradient(to left, #0f2027, #203a43, #2c5364); */
-    background: linear-gradient(to right, #497fd1,#97ddf8, #f1e4dc);
+    background: linear-gradient(to right, #fcfaf3,#e2cfbd, #f1e4dc);
    
     font-family:monospace;
     font-weight: bold ;
@@ -101,6 +66,8 @@ box-shadow:  -22px -22px 32px #d5d5d5,
 }
 .s1,.s2,.s3,.s4,.s5{
     background:#0575e6 ;
+    cursor: pointer;
+    
 }
 .s1:hover{
      /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
@@ -135,4 +102,7 @@ box-shadow:  -22px -22px 32px #d5d5d5,
     /* background: linear-gradient(to right, #0575e6, #021b79); */
     background:#0080ff ;
     transition: background .2s ease-in;
+}
+a{
+    text-decoration: none;
 }

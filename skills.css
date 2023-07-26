@@ -1,0 +1,45 @@
+.nav-link {
+    color: #030303;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    
+    position: relative;
+  }
+  .nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ec0f0f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.sk {
+    transform: scaleY(-1);
+    background-image: linear-gradient(to top, #1082f5 100%, #1082f5 0%);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease;
+    cursor: pointer;
+  }
+
+  .sk:hover {
+    background-size: 100% 75%;
+  }
+  .sk2{
+    transform: scaleY(-1);
+    height: 160px;
+    font-size: 130px;
+  }

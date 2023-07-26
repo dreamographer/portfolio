@@ -1,20 +1,20 @@
 body {
     /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
     /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
-    background: linear-gradient(to right, #dac2c2, #d5bdaf);
+    /* background: linear-gradient(to right, #dac2c2, #d5bdaf); */
     font-family: poppins;
     background-size: 200%;
-   animation: grad 20s infinite alternate;
+   /* animation: grad 20s infinite alternate; */
    color: rgb(0, 0, 0);
 }
-@keyframes grad {
+/* @keyframes grad {
     0%{
        background-position:left ;
     }
     100%{
        background-position: right;
     }
-}
+} */
 
 .nav-link {
     color: #030303;
