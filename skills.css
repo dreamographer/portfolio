@@ -1,5 +1,9 @@
+.navbar-dark{
+  background-color: rgba(242, 220, 245, 0) !important;
+  
+}
 .nav-link {
-    color: #030303;
+    color: #ffffff !important;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
