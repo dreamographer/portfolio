@@ -1,23 +1,26 @@
 body {
     /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
     /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
-    /* background: linear-gradient(to right, #dac2c2, #d5bdaf); */
-    font-family: poppins;
+    background: linear-gradient(to right, #000000, #001d3d);
+ 
     background-size: 200%;
-   /* animation: grad 20s infinite alternate; */
+   animation: grad 20s infinite alternate;
+  
    color: rgb(0, 0, 0);
 }
-/* @keyframes grad {
+@keyframes grad {
     0%{
        background-position:left ;
     }
     100%{
        background-position: right;
     }
-} */
-
+}
+.navbar-light{
+    background-color: #9ed8db00 !important;
+}
 .nav-link {
-    color: #030303;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -42,8 +45,21 @@ body {
     width: 100%; 
     left: 0; 
   }
-
-
+  a:hover{
+    color: aquamarine !important;
+  }
+  .active{
+    color: white !important;
+    font-weight: bold !important;
+  }
+  #dp {
+    filter: grayscale(100%); /* Apply the grayscale filter */
+    transition: filter 0.5s ease;
+  }
+  
+  #dp:hover {
+    filter: none; /* Remove the filter on hover (reset to the initial value) */
+  }
 h4{
     font-family: poppins black;
 }
@@ -56,12 +72,10 @@ h5{
     font-family: poppins light;
     font-size: 17px;
 }
-.s1{
-    background: #fefeff50;
-    
-}
+
 
 .detail{
-    background:rgba(223, 110, 217, 0.103);
+    background:#9ed8db27;
     backdrop-filter: blur(20px);
+    color: white !important;
 }

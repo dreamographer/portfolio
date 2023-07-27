@@ -1,11 +1,13 @@
-body{
-    background: linear-gradient(to right, #000000, #f30707);
-    font-family: poppins;
+body {
+    /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
+    /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
+    background: linear-gradient(to right, #000000, #001d3d);
+ 
     background-size: 200%;
    animation: grad 20s infinite alternate;
-    color: white;
+  
+   color: rgb(0, 0, 0);
 }
-
 @keyframes grad {
     0%{
        background-position:left ;
@@ -14,6 +16,7 @@ body{
        background-position: right;
     }
 }
+
 .navbar-dark{
     background-color: rgba(242, 220, 245, 0) !important;
     
@@ -41,25 +44,24 @@ body{
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a:hover{
-    color: aquamarine !important;
-  }
   a:hover:after { 
     width: 100%; 
     left: 0; 
+  }
+  a:hover{
+    color: aquamarine !important;
   }
   .active{
     color: white !important;
     font-weight: bold !important;
   }
+  .card {
+    /* Set the transition property for smooth animation */
+    transition: transform 0.3s ease;
+  }
 
-
-/* .slide {
-box-shadow: 16.5px 19px 44px 5px #03030350;
-} */
-#dp{
-    box-shadow: 10.5px 8px 25px -9px rgba(28, 28, 28, 0.59);
-
-
-}
-
+  /* Scale up the card on hover */
+  .card:hover {
+    /* Increase the scale by 5% (adjust as needed) */
+    transform: scale(1.05);
+  }

@@ -12,6 +12,48 @@
 </head>
 
 <body>
+    <nav class="navbar sticky-top bg-body navbar-dark navbar-expand-md ">
+        <div class="container-fluid">
+
+            <div class=" text-center slide   ">
+                <a class="text-light fw-bold d-md-none display-1 navbar-brand active" href="#">HOME</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav  justify-content-evenly flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active d-md-block d-none" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="personal.html">PERSONAL DETAILS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid ps-4 pe-4 pt-4">
         <div class="row  justify-content-center align-items-center">
             <div class="col-md-3 text-center rounded-5 m-2 col-sm-7  order-md-2 m-sm-3">
@@ -27,36 +69,10 @@
             </div>
 
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-3 s3  text-center col-sm-5 p-4 rounded-5 m-sm-2 m-2 slide">
-                <a href="skills.html" class=" ">
-                    <h4 class="text-light">SKILLS</h4>
-                </a>
-            </div>
-            <div class="col-md-3  text-center s1 col-sm-5 slide rounded-5 me-md-3 m-2 m-sm-2  p-4 ">
-                <a href="personal.html" class=" link-underline link-underline-opacity-0">
-                    <h4 class="text-light">personal details</h4>
-                </a>
-            </div>
-            <div class="col-md-3  text-center s2 col-sm-5 slide rounded-5 me-md-3 m-2 m-sm-2  p-4 ">
-                <a href="projects.html" class=" link-underline link-underline-opacity-0">
-                    <h4 class="text-light">PROJECTS</h4>
-                </a>
-            </div>
+       
 
         </div>
-        <div class="row justify-content-center  mt-md-3 mb-md-4">
-            <div class="col-md-3  s4 col-sm-5 rounded-5 m-sm-2 m-2 me-md-3 slide text-center p-4">
-                <a href="contact.html" class=" link-underline link-underline-opacity-0 ">
-                    <h4>CONTACT ME</h4>
-                </a>
-            </div>
-            <div class="col-md-3 s5  rounded-5 col-sm-5 m-sm-2 m- slide text-center p-4">
-                <a href="resume.html" class=" link-underline link-underline-opacity-0">
-                    <h4 class="text-light">RESUME</h4>
-                </a>
-            </div>
-        </div>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
