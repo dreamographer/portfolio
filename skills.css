@@ -28,11 +28,31 @@
 
 .sk {
     transform: scaleY(-1);
-    background-image: linear-gradient(to top, #1082f5 100%, #1082f5 0%);
     background-size: 100% 0%;
     background-repeat: no-repeat;
     transition: background-size 0.5s ease;
     cursor: pointer;
+    height:160px !important;
+    align-items: center;
+    margin-bottom: 2rem;;
+  }
+  .front .sk{
+    background-image: linear-gradient(to top, #2ee3f0 100%, #1082f5 0%);
+  }
+  .back .sk{
+    background-image: linear-gradient(to top, #10f51b 100%, #1082f5 0%);
+  }
+  .db .sk{
+    background-image: linear-gradient(to top, #6586c0 100%, #1082f5 0%);
+  }
+  .pl .sk{
+    background-image: linear-gradient(to top, #107bf5 100%, #1082f5 0%);
+  }
+  .ot .sk{
+    background-image: linear-gradient(to top, #ff9900 100%, #1082f5 0%);
+  }
+  .gs .sk{
+    background-image: linear-gradient(to top, #f5f110 100%, #1082f5 0%);
   }
 
   .sk:hover {
@@ -40,6 +60,15 @@
   }
   .sk2{
     transform: scaleY(-1);
-    height: 160px;
-    font-size: 130px;
+    
+    padding-bottom: 2rem;
+    font-size: 5rem;
   }
+  .tx-2{
+    transform: scaleY(-1);
+    position: relative;
+    bottom:8rem;
+
+    font-size: 13px;
+
+     }
