@@ -1,0 +1,124 @@
+body{
+    background: linear-gradient(to right, #000000, #23f307);
+    font-family: poppins;
+    background-size: 200%;
+   animation: grad 20s infinite alternate;
+    color: white;
+    overflow-x: hidden;
+}
+
+@keyframes grad {
+    0%{
+       background-position:left ;
+    }
+    100%{
+       background-position: right;
+    }
+}
+.navbar-dark{
+    background-color: rgba(242, 220, 245, 0) !important;
+    
+}
+
+.nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    
+    position: relative;
+  }
+  .nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ec0f0f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover{
+    color: aquamarine !important;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  .active{
+    color: white !important;
+    font-weight: bold !important;
+  }
+
+
+
+
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 95%;
+    width: 2px;
+    background: #CCD1D9;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    right: 3px;
+    padding: 20px;
+    background-color: #f9f9f946;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+    
+  transform: translateX(-200%);
+ 
+  }
+
+  .anim{
+    animation: slideIn 1s forwards;
+  }
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 101%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 20px;
+    background: #b7efc5;
+    border-radius: 50%;
+  }
+  .right .timeline-item:before{
+    left: -1%;
+  }
+  .right .timeline-item{
+    left: 5px;
+      
+  transform: translateX(200%);
+  /* animation: slideIn 1s forwards; */
+  }
