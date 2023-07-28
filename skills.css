@@ -1,32 +1,57 @@
+body{
+  background: linear-gradient(to right, #000000, #07f3d4);
+  font-family: poppins;
+  background-size: 200%;
+ animation: grad 20s infinite alternate;
+  color: white !important;
+  overflow-x: hidden;
+}
+@keyframes grad {
+  0%{
+     background-position:left ;
+  }
+  100%{
+     background-position: right;
+  }
+}
 .navbar-dark{
   background-color: rgba(242, 220, 245, 0) !important;
   
 }
+
 .nav-link {
-    color: #ffffff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    display: inline-block;
-    
-    position: relative;
-  }
-  .nav-link:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #ec0f0f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ec0f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover{
+  color: aquamarine !important;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.active{
+  color: white !important;
+  font-weight: bold !important;
+}
 
 
 .sk {

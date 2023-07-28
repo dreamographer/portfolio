@@ -82,7 +82,7 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 1s ease;
+    transition: all .5s ease;
     
   transform: translateX(-200%);
  
@@ -118,6 +118,7 @@ body{
   }
   .right .timeline-item{
     left: 5px;
+    
       
   transform: translateX(200%);
   /* animation: slideIn 1s forwards; */

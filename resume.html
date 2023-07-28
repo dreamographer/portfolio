@@ -21,7 +21,7 @@
         <div class="container-fluid">
 
             <div class=" text-center slide   ">
-                <a class="text-light fw-bold d-md-none display-1 navbar-brand active" href="#">HOME</a>
+                <a class="text-light fw-bold  display-1 navbar-brand active" href="#">RESUME</a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -37,7 +37,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav  justify-content-evenly flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active d-md-block d-none" href="index.html">Home</a>
+                            <a class="nav-link d-md-block d-none" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="personal.html">PERSONAL DETAILS</a>
@@ -48,9 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="skills.html">SKILLS</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="resume.html">RESUME</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT ME</a>
                         </li>
@@ -59,8 +59,12 @@
             </div>
         </div>
     </nav>
-    <div style="height: 100vh;"></div>
     <div class="container">
+        <div class="row text-center m-5 p-5">
+            <div class="col">
+                <h2>Experience</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="timeline">
@@ -68,7 +72,7 @@
                         <h3>Software developer</h3>
                         <p>Working as an intern in Brototype as software developer. For developing skills in full stack developmwnt </p>
                     </div>
-                    <div class="row right justify-content-end">
+                    <div class="row right justify-content-end p-2">
                         <div class="timeline-item  col-6 ">
                             <h3>BACHELOR OF COMPUTER
                                 APPLICATION</h3>
@@ -79,7 +83,7 @@
                         <h3>Heigher Secondary</h3>
                         <p>Completed +2 in Computer Science from SRMGHSS Ramnagar.</p>
                     </div>
-                    <div class="row right justify-content-end">
+                    <div class="row right justify-content-end p-2">
                         <div class="timeline-item col-6">
                             <h3>SSLC</h3>
                             <p>Completed SSLC from SRSSVM Nellithara.</p>
@@ -97,7 +101,7 @@
             const triggerPoint = window.innerHeight ; 
             timelineItems.forEach((item) => {
                 const itemTop = item.getBoundingClientRect().top;
-                if (itemTop < triggerPoint) {
+                if (itemTop<triggerPoint) {
                     
                     item.classList.add('anim');
                 }

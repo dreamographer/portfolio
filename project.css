@@ -1,7 +1,7 @@
 body {
     /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
     /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
-    background: linear-gradient(to right, #000000, #001d3d);
+    background: linear-gradient(to right, #000000, #ff0084);
  
     background-size: 200%;
    animation: grad 20s infinite alternate;
@@ -10,10 +10,10 @@ body {
 }
 @keyframes grad {
     0%{
-       background-position:left ;
+       background-position:bottom ;
     }
     100%{
-       background-position: right;
+       background-position: left;
     }
 }
 
@@ -64,4 +64,9 @@ body {
   .card:hover {
     /* Increase the scale by 5% (adjust as needed) */
     transform: scale(1.05);
+  }
+  .card{
+    background: rgb(255, 255, 255) !important;
+   
+ 
   }

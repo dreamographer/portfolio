@@ -12,18 +12,18 @@
 
 <body>
     
-     <nav class="navbar sticky-top bg-body navbar-light navbar-expand-md ">
+     <nav class="navbar sticky-top navbar-dark navbar-expand-md ">
         <div class="container-fluid">
 
             <div class=" text-center slide   ">
-                <a class="text-black display-1 navbar-brand active" href="#">CONTACT ME</a>
+                <a class="text-light display-1 navbar-brand active" href="#">CONTACT ME</a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
 
@@ -56,7 +56,7 @@
     </nav>
     <div class="container  mt-4" style="overflow: hidden;">
         <div class="row">
-            <div class="card col rounded-5" style="background:rgb(255, 255, 255);">
+            <div class="card col rounded-5" style="background:rgba(255, 255, 255, 0.774);">
                 <div class="card-body  text-center">
                     <div class="card-title    ">
                         <h2 class="display-6 fw-bold">Let's Connect</h2>
@@ -72,13 +72,14 @@
                 <div class="row justify-content-center pb-4" >
                     
                     <div class="form-floating col-6  p-1 ms-1">
-                        <input type="text" name="first name" class="form-control" id="floatingInput" placeholder="lastName" required>
+                        <input type="text"  name="firstName" class="form-control firstName" id="floatingInput " placeholder="lastName" oninput="validateFirstname()" required>
                         <label for="floatingInput">First Name</label>
-                        <span id="error"></span>
+                        <span id="error-Firstname"></span>
                     </div>
                     <div class="form-floating col-5 p-1">
-                        <input type="text" name="last name" class="form-control" id="floatingInput" placeholder="lastName" required>
+                        <input type="text" name="lastName" class="form-control lastName" id="floatingInput" placeholder="lastName" oninput="validateLastname()" required>
                         <label for="floatingInput">Last Name</label>
+                        <span id="error-lastname"></span>
                     </div>
                     <div class="form-floating col-11 p-1">
                         <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
@@ -99,7 +100,7 @@
             </div>
         </div>
         
-            <div class="card rounded-4 col pt-1 mt-5 text-center" >
+            <div class="card rounded-4 col pt-1 mt-5 text-center " style="background:rgba(255, 255, 255, 0.774);">
                 <div class="row  mt-5">
                 <h2 class="display-4 col-12 pt-0 ">Connect with me on</h2>
                <div class="pt-5 pb-5 mt-5 mb-5 ">
@@ -123,12 +124,36 @@
         </div>
 
     </div>
-    <script>
-        function validate(){
-
-        }
-
-    </script>
+    <script >
+        function validateFirstname() {
+    const FirstName = document.querySelector('.firstName').value;
+    const errorFirstname = document.getElementById('error-Firstname');
+  
+    if (FirstName === '') {
+       
+        errorFirstname.innerText = 'please Enter your First Name.';
+    } else if (!/^[A-Za-z\s]+$/.test(FirstName)) {
+       
+        errorFirstname.innerText = 'Only alphabets & spaces are allowed!';
+    } else {
+        errorFirstname.innerText = '';
+    }
+}
+function validateLastname() {
+    const LastName = document.querySelector('.lastName').value;
+    const errorLastname = document.getElementById('error-lastname');
+  
+    if (LastName === '') {
+       
+        errorLastname.innerText = 'please Enter your Last Name.';
+    } else if (!/^[A-Za-z\s]+$/.test(LastName)) {
+    
+        errorLastname.innerText = 'Only alphabets & spaces are allowed!';
+    } else {
+        errorLastname.innerText = '';
+    }
+}
+     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

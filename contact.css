@@ -6,34 +6,54 @@ body {
   }
  
   /* hover design */
-  .nav-link {
-    color: #030303;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    
-    position: relative;
-  }
-  .nav-link:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #ec0f0f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+  
+.navbar-dark{
+  background-color: rgba(242, 220, 245, 0) !important;
+  
+}
+
+.nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ec0f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover{
+  color: aquamarine !important;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.active{
+  color: white !important;
+  font-weight: bold !important;
+}
 
 /* end of hover design */
+
+input[type=text],input[type=email],textarea{
+  background-color: rgba(255, 255, 255, 0.253) !important;
+}
+
+
+
 
   .social {
     display: flex;
