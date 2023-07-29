@@ -153,6 +153,24 @@ function validateLastname() {
         errorLastname.innerText = '';
     }
 }
+function validate(){
+    let isValid=true;
+    //validate first name
+    var firstNameInput =document.querySelector('.firstName').value;
+
+    var lastNameInput =document.querySelector('.lastName').value;
+    if (!/^[A-Za-z\s]+$/.test(firstNameInput)) {
+        alert("Please enter a valid first name");
+            return false;
+                }
+        //Validate last name
+        else if (!/^[A-Za-z\s]+$/.test(lastNameInput)) {
+            alert("Please enter a valid last name");
+            return false;
+        }else{
+            alert("Form submitted");
+                }
+        }
      </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
