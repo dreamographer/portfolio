@@ -1,6 +1,5 @@
 body{
     background: linear-gradient(to right, #000000, #f30707);
-    font-family: poppins;
     background-size: 200%;
    animation: grad 20s infinite alternate;
     color: white;
